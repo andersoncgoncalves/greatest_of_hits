@@ -1,0 +1,95 @@
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #bebaba;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Estilo para o logo */
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 150px;
+            height: auto;
+        }
+
+        /* Estilo para o menu de navegação */
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            background-color: #666565;
+            padding: 5px 10px;
+            margin: 0 10px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .social-icons a:hover {
+            color: #0077b5; /* Cor padrão do LinkedIn */
+        }
+
+        .social-icons a.github:hover {
+            color: #333; /* Cor padrão do GitHub */
+        }
+        
+        header nav a:hover {
+            background-color: #777;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            max-width: 800px;
+        }
+        
+        strong{
+            color: #0097b2;
+        }
+        
+        H1 {
+            color: #0097b2
+        }
+
+        h2 {
+            color: #0097b2
+        }
+        footer {
+            background-color: #bebaba;
+            color: white;
+            text-align: left;
+            padding: px 0;
+        }
