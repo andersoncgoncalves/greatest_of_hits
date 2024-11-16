@@ -10,6 +10,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         /* Estilo para o logo */
@@ -26,6 +27,8 @@
         /* Estilo para o menu de navegação */
         header nav {
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza em telas menores */
         }
 
         header nav a {
@@ -34,14 +37,22 @@
             color: white;
             background-color: #666565;
             padding: 5px 10px;
-            margin: 0 10px;
+            margin: 5px;
             border-radius: 5px;
-            font-size: 1.2em;
+            font-size: 1em;
         }
+
+        header nav a {
+            background: #777;
+        }
+
+        /* ícones redes sociais */
 
         .social-icons {
             display: flex;
             align-items: center;
+            justify-content: center;
+            margin-top: 10px;
         }
 
         .social-icons a {
@@ -66,7 +77,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            height: auto;
             padding: 20px;
             text-align: center;
         }
@@ -74,22 +85,62 @@
         .container p {
             font-size: 1.2em;
             max-width: 800px;
+            padding: 10px;
         }
-        
-        strong{
-            color: #0097b2;
-        }
-        
-        H1 {
+
+        /* tílulos */
+
+        h1, h2, strong{
             color: #0097b2
         }
 
-        h2 {
-            color: #0097b2
-        }
         footer {
             background-color: #bebaba;
             color: white;
-            text-align: left;
+            text-align: center;
             padding: px 0;
         }
+
+        /* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha elementos no header */
+        align-items: center;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        flex-direction: column; /* Empilha links no menu */
+        align-items: center;
+    }
+
+    header nav a {
+        margin: 5px 0; /* Ajusta espaçamento vertical */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .container p {
+        font-size: 1em; /* Reduz tamanho da fonte */
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        width: 100px; /* Reduz tamanho da logo */
+    }
+
+    header nav a {
+        font-size: 0.9em; /* Reduz tamanho dos links */
+        padding: 5px 8px; /* Ajusta padding */
+    }
+
+    .container p {
+        font-size: 0.9em; /* Ajusta tamanho da fonte */
+    }
+}
